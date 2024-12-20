@@ -1,7 +1,7 @@
 Robertsonics WAV Trigger Pro Qwiic Arduino Library
 ==================================================
 
-The WAV Trigger Pro is a high-peformance, low latency polyphonic audio player.
+The WAV Trigger Pro is a high-peformance, low latency polyphonic audio player with extensive USB MIDI capabilities.
 
 Note, this Arduino Library is capable of controlling the WAV Trigger Pro via I2C commands using a Qwiic Cable.
 
@@ -11,7 +11,7 @@ Repository Contents
 * **/examples** - Example code to be used in the Arduino IDE.
 * **/src** - Source files for the library (.cpp, .h).
 * **keywords.txt** - Keywords from this library that will be highlighted in the Arduino IDE.
-* **libaray.properties** - General library properties for the Arduino package manager
+* **library.properties** - General library properties for the Arduino package manager
 
 Documentation
 --------------
@@ -22,13 +22,13 @@ Documentation
 License Information
 -------------------
 
-This product is _**open source**_! 
+This product is _**open source hardware**_! 
 
 Please review the LICENSE.md file for license information. 
 
-If you have any questions or concerns on licensing, please contact technical support on our [SparkFun forums](https://forum.sparkfun.com/viewforum.php?f=152).
+If you have any questions or concerns on licensing, please contact technical support on our [SparkFun forums](https://community.sparkfun.com/c/sensors/sound-audio).
 
-Distributed as-is; no warranty is given.
+Library distributed as-is; no warranty is given.
 
 - Your friends at Robertsonics and SparkFun.
 
