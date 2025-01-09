@@ -31,6 +31,11 @@
 
 #define RESPONSE_DELAY_MS			2
 
+#define LOOP_FLAG                   0x01
+#define LOCK_FLAG                   0x02
+#define PITCH_BEND_FLAG             0x04
+#define BALANCE_MID                 64
+
 class WAVTriggerPro
 {
 public:

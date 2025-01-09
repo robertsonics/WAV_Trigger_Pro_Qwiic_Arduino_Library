@@ -1,25 +1,41 @@
 ############################################################################
-# Syntax Coloring Map for SparkFun WAV Trigger Pro Library               #
+# Syntax Coloring Map for SparkFun WAV Trigger Pro Library
 ############################################################################
 # Class
 ############################################################################
 
-WAVTriggerPro	KEYWORD1
-
-############################################################################
-# Constants
-############################################################################
-
-CMD_GET_VERSION LITERAL1
-CMD_GET_SYS_INFO    LITERAL1
-CMD_TRACK_PLAY  LITERAL1
-
-MAX_MESSAGE_LEN	LITERAL1
-VERSION_STRING_LEN	LITERAL1
+WAVTriggerPro   KEYWORD1
 
 ############################################################################
 # Methods and Functions
 ############################################################################
 
-start	KEYWORD2
-trackPlay KEYWORD2
+begin    KEYWORD2
+trackPlay   KEYWORD2
+getAddress  KEYWORD2
+getVersion  KEYWORD2
+getNumTracks    KEYWORD2
+trackPlayPoly   KEYWORD2
+trackFade   KEYWORD2
+trackStop   KEYWORD2
+trackSetLoop    KEYWORD2
+trackSetLock    KEYWORD2
+trackGetStatus  KEYWORD2
+stopAll KEYWORD2
+getNumActiveVoices  KEYWORD2
+sendMidiMsg KEYWORD2
+loadPreset  KEYWORD2
+setOutputGain   KEYWORD2
+
+############################################################################
+# Constants
+############################################################################
+
+WAV_TRIGGER_PRO_DEFAULT_ADDR    LITERAL1
+MAX_MESSAGE_LEN LITERAL1
+VERSION_STRING_LEN  LITERAL1
+RESPONSE_DELAY_MS   LITERAL1
+LOOP_FLAG   LITERAL1
+LOCK_FLAG   LITERAL1
+PITCH_BEND_FLAG LITERAL1
+BALANCE_MID LITERAL1

@@ -32,7 +32,7 @@ uint8_t WAVTriggerPro::getAddress() {
 // **************************************************************
 bool WAVTriggerPro::getVersion(char *pDst) {
 
-uint8_t txbuf[4];
+uint8_t txbuf[2];
 char * pStr = pDst;
 
 	txbuf[0] = CMD_GET_VERSION;
@@ -50,7 +50,7 @@ char * pStr = pDst;
 int WAVTriggerPro::getNumTracks(void) {
 
 int i = 0;
-uint8_t txbuf[4];
+uint8_t txbuf[2];
 uint8_t rxbuf[MAX_MESSAGE_LEN];
 uint16_t numTracks;
 
@@ -156,7 +156,7 @@ uint8_t txbuf[6];
 int WAVTriggerPro::getNumActiveVoices(void) {
 
 int i = 0;
-uint8_t txbuf[4];
+uint8_t txbuf[2];
 uint8_t rxbuf[MAX_MESSAGE_LEN];
 uint16_t numVoices;
 
@@ -195,7 +195,7 @@ uint16_t trackStat;
 // **************************************************************
 void WAVTriggerPro::stopAll(void) {
 
-uint8_t txbuf[4];
+uint8_t txbuf[2];
 
     txbuf[0] = CMD_STOP_ALL;
     write(txbuf, 1);
@@ -208,15 +208,15 @@ uint8_t txbuf[6];
 
 	txbuf[0] = CMD_MIDI_MSG;
 	txbuf[1] = cmd;
-	txbuf[2] = dat1;
-	txbuf[3] = dat2;
+	txbuf[2] = dat1 & 0x7f;
+	txbuf[3] = dat2 & 0x7f;
 	write(txbuf, 4);
 }
 
 // **************************************************************
 void WAVTriggerPro::loadPreset(int preset) {
 
-uint8_t txbuf[6];
+uint8_t txbuf[4];
 
 	txbuf[0] = CMD_LOAD_PRESET;
     txbuf[1] = (uint8_t)preset;
@@ -227,7 +227,7 @@ uint8_t txbuf[6];
 // **************************************************************
 void WAVTriggerPro::setOutputGain(int gainDb) {
 
-uint8_t txbuf[6];
+uint8_t txbuf[4];
 unsigned short tmp16;
 
 	txbuf[0] = CMD_SET_OUTPUT_GAIN;
