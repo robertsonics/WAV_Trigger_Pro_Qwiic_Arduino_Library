@@ -60,3 +60,13 @@ Wire.begin()
 
 **setOutputGain(int gainDb)** - This sets the overall output gain of the WAV Trigger Pro's stereo audio output in dB, from 0 to -80dB.
 
+Examples
+========
+
+The libary includes a number of example sketches to demonstrate playing and controlling audio. These examples were developed using the SparkFun Redboard Qwiic, and do not require any other hardware. They do require a set of demo sounds on the microSD card. These sounds can be found here:
+
+[microSD image for examples](https://drive.google.com/file/d/17SlXueDCNjg29a56VSZPSQ7Gt-WlDesp/view?usp=sharing)
+
+Unzip the archive, copy all the .wav files to an otherwise empty microSD card and install in your WAV Trigger Pro before running the examples.
+
+
