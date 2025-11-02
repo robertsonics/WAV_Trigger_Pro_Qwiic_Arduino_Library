@@ -40,7 +40,7 @@ Wire.begin()
         LOCK_FLAG: Track will not yield to voice stealing algorithm
         PITCH_BEND_FLAG: Track will follow MIDI PitchBend messages
 
-**wtp.trackFade(int t, int gain, int time, bool)** - this command initiates a hardware volume fade on all instances of track number **t** if it is currently playing. The track volume will transition smoothly from the current value to the target gain in the specified number of milliseconds. Use this command to smoothly change the volume of a playing track. To fade out and stop a track, use the trackStop() command below.
+**wtp.trackFade(int t, int gain, int time)** - this command initiates a hardware volume fade on all instances of track number **t** if it is currently playing. The track volume will transition smoothly from the current value to the target gain in the specified number of milliseconds. Use this command to smoothly change the volume of a playing track. To fade out and stop a track, use the trackStop() command below.
 
 **wtp.trackStop(int track, int releaseMs)** - This command stops any instance of the specified track using the supplied release value in milliseconds. The track will fade and then stop.
 
