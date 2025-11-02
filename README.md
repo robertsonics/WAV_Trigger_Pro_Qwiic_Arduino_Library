@@ -50,7 +50,7 @@ Wire.begin()
 
 **trackGetStatus(int track)** - returns 1 if one or more instances of the specified track are currently playing, otherwise returns 0.
 
-**stopAll(void)** - This command stops all audio.
+**stopAll()** - This command stops all audio.
 
 **getNumActiveVoices()** - This command returns the number of voices currently active.
 
